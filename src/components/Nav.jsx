@@ -60,7 +60,7 @@ export default function Nav({ theme, toggleTheme }) {
     <>
       <nav>
         <a href="#" onClick={e => scrollTo(e, 'body')} className="nav-logo">
-          <img src="/logo.webp" alt="Sher logo" className="h-8 md:h-9" style={{ filter: 'brightness(0) invert(1)' }} />
+          <img src="/logo.webp" alt="Sher logo" className="h-8 md:h-9"  />
         </a>
 
         {/* Desktop links */}
