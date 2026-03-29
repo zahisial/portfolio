@@ -114,7 +114,7 @@ export function Footer() {
     <footer className="flex flex-col gap-3 justify-between items-center px-5 py-6 font-mono text-xs md:flex-row md:px-12 md:py-8 md:text-sm"
       style={{ color: 'var(--muted)', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
       <span className="flex gap-2 items-center">
-        <img src="/logo.webp" alt="Sher" className="h-4 md:h-5" style={{ filter: 'brightness(0) invert(1)' }} />
+        <img src="/logo.webp" alt="Sher" className="h-4 md:h-5" style={{ filter: ' invert(1)' }} />
         <span>© 2025 · UI/UX Designer &amp; Developer</span>
       </span>
       <span>
