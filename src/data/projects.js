@@ -243,8 +243,8 @@ export const reactProjects = [
   {
     num: 'RX·05',
     title: 'Edarat DMS (Frontend Demo)',
-    url: 'https://dms-demo-frontend-test.vercel.app',
-    domain: 'dms-demo-frontend-test.vercel.app',
+    
+    domain: 'Edarat DMS Internal',
     desc: 'Enterprise document management system demo with role‑based permissions (approver, editor, viewer). Built with React, TypeScript, Tailwind, and Vite.',
     tags: ['DMS', 'Role‑Based Access', 'TypeScript', 'Vite'],
     badge: 'React · TypeScript'
