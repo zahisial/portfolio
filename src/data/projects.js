@@ -268,5 +268,13 @@ export const governmentProjects = [
     desc: 'Complete UI design for the MOHRE Android kiosk support app — a UAE Dubai government project. Delivered at Digital Lab UAE (Dubai, 2019). Designed user flows, wireframes, storyboards, and rapid prototypes for kiosk-based citizen interactions.',
     tags: ['Government', 'Android / Kiosk', 'UAE Dubai', 'UX Design'],
     badge: 'Android / UI'
-  }
+  },
+  { num: 'GOV·03',
+    title: 'Fujairah Municipality Data Visualization',
+    url: 'https://fujairah-municipality.vercel.app',
+    domain: 'fujairah-municipality.vercel.app',
+    desc: 'Interactive data visualization dashboard for Fujairah Municipality, UAE. Real-time charts, maps, and sector metrics for urban planning and government performance monitoring.',
+    tags: ['Government', 'Data Visualization', 'React', 'TypeScript', 'Mapbox', 'Dashboard', 'Bilingual RTL' ],
+    badge: 'React · TypeScript',
+  },
 ]
