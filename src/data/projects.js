@@ -249,6 +249,14 @@ export const reactProjects = [
     tags: ['DMS', 'Role‑Based Access', 'TypeScript', 'Vite'],
     badge: 'React · TypeScript'
   },  
+  { num: 'RX-06',
+    title: 'Fujairah Municipality Data Visualization',
+    url: 'https://fujairah-municipality.vercel.app',
+    domain: 'fujairah-municipality.vercel.app',
+    desc: 'Interactive data visualization dashboard for Fujairah Municipality, UAE. Real-time charts, maps, and sector metrics for urban planning and government performance monitoring.',
+    tags: ['Government', 'Data Visualization', 'React', 'TypeScript', 'Mapbox', 'Dashboard', 'Bilingual RTL' ],
+    badge: 'React · TypeScript',
+  },
 ]
 
 export const governmentProjects = [
