@@ -208,8 +208,8 @@ export const reactProjects = [
   {
     num: 'RX-01',
     title: 'ViBOT',
-    url: 'https://vibot-pink.vercel.app',
-    domain: 'vibot-pink.vercel.app',
+    url: 'https://vibot-demo.vercel.app',
+    domain: 'vibot-demo.vercel.app',
     desc: 'Crypto arbitrage platform and trading dashboard built with Vite + React. Multi-page app with live CoinGecko API integration, real-time price tracking, arbitrage opportunity scanner, and portfolio overview.',
     tags: ['Crypto', 'React', 'Vite', 'CoinGecko API', 'Fin'],
     badge: 'Vite · React'
