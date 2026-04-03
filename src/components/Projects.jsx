@@ -1,11 +1,12 @@
 import { useState, useEffect, useRef } from 'react'
-import { webflowProjects, wordpressProjects, reactProjects, governmentProjects } from '../data/projects'
+import { webflowProjects, wordpressProjects, reactProjects, governmentProjects, ongoingProjects } from '../data/projects'
 
 const FILTERS = [
   { key: 'webflow', label: 'Webflow' },
   { key: 'react', label: 'React' },
   { key: 'wordpress', label: 'WordPress' },
   { key: 'government', label: 'Government' },
+  { key: 'ongoing', label: 'Ongoing' },
 ]
 
 const ACTIVE_STYLES = {
@@ -13,6 +14,7 @@ const ACTIVE_STYLES = {
   react:      { background: 'var(--accent3)',                color: 'var(--bg)',     borderColor: 'rgba(125,226,196,0.3)' },
   wordpress:  { background: 'var(--dot-challenge)',          color: 'var(--bg)',     borderColor: 'rgba(255,255,255,0.3)' },
   government: { background: 'var(--badge-government-color)', color: '#fff',          borderColor: 'rgba(255,255,255,0.3)' },
+  ongoing:    { background: 'var(--ongoing-color)',          color: '#fff',          borderColor: 'rgba(251,191,36,0.3)' },
 }
 
 const BADGE_STYLES = {
@@ -20,6 +22,7 @@ const BADGE_STYLES = {
   wordpress:  { background: 'rgba(232,122,122,0.1)', color: 'var(--dot-challenge)',           borderColor: 'rgba(232,122,122,0.25)' },
   react:      { background: 'rgba(125,226,196,0.1)', color: 'var(--accent3)',                 borderColor: 'rgba(125,226,196,0.25)' },
   government: { background: 'rgba(192,132,252,0.26)',color: 'var(--badge-government-color)',  borderColor: 'rgba(192,132,252,0.25)' },
+  ongoing:    { background: 'rgba(251,191,36,0.1)',  color: 'var(--ongoing-color)',           borderColor: 'rgba(251,191,36,0.25)' },
 }
 
 const DOT_COLORS = {
@@ -27,6 +30,7 @@ const DOT_COLORS = {
   react:      'var(--accent3)',
   wordpress:  'var(--dot-challenge)',
   government: 'var(--badge-government-color)',
+  ongoing:    'var(--ongoing-color)',
 }
 
 const GROUP_LABELS = {
@@ -34,6 +38,7 @@ const GROUP_LABELS = {
   react:      'React · Next.js · Tailwind Projects',
   wordpress:  'WordPress Projects',
   government: 'Government & Enterprise Portals',
+  ongoing:    'Ongoing Projects',
 }
 
 const BADGE_LABEL = {
@@ -41,6 +46,7 @@ const BADGE_LABEL = {
   wordpress:  () => 'WordPress',
   react:      (p) => p.badge || 'React',
   government: (p) => p.badge || 'Liferay DXP',
+  ongoing:    (p) => p.badge || 'In Progress',
 }
 
 const LINK_COLORS = {
@@ -48,13 +54,15 @@ const LINK_COLORS = {
   react:      'var(--accent3)',
   wordpress:  'var(--dot-challenge)',
   government: 'var(--badge-government-color)',
+  ongoing:    'var(--ongoing-color)',
 }
 
 const ALL_GROUPS = [
-  { key: 'webflow',    projects: webflowProjects,   cols: 'md:grid-cols-2 lg:grid-cols-3' },
-  { key: 'wordpress',  projects: wordpressProjects, cols: 'md:grid-cols-2 lg:grid-cols-3' },
-  { key: 'react',      projects: reactProjects,     cols: 'md:grid-cols-2 lg:grid-cols-3' },
-  { key: 'government', projects: governmentProjects, cols: 'md:grid-cols-2' },
+  { key: 'webflow',    projects: webflowProjects,    cols: 'md:grid-cols-2 lg:grid-cols-3' },
+  { key: 'wordpress',  projects: wordpressProjects,  cols: 'md:grid-cols-2 lg:grid-cols-3' },
+  { key: 'react',      projects: reactProjects,      cols: 'md:grid-cols-2 lg:grid-cols-3' },
+  { key: 'government', projects: governmentProjects,  cols: 'md:grid-cols-2' },
+  { key: 'ongoing',    projects: ongoingProjects,     cols: 'md:grid-cols-2 lg:grid-cols-3' },
 ]
 
 function ProjectCard({ project, category }) {
@@ -121,6 +129,20 @@ export default function Projects() {
 
   useEffect(() => { activeFilterRef.current = activeFilter }, [activeFilter])
 
+  // Re-trigger reveal animation when switching tabs
+  useEffect(() => {
+    const group = document.querySelector(`.wf-group[data-category="${activeFilter}"]`)
+    if (!group) return
+    const cards = group.querySelectorAll('.reveal')
+    // Small delay to allow display:block to take effect
+    requestAnimationFrame(() => {
+      cards.forEach((card, i) => {
+        card.style.transitionDelay = `${i * 0.07}s`
+        card.classList.add('visible')
+      })
+    })
+  }, [activeFilter])
+
   const startTimer = () => {
     if (timerRef.current) clearInterval(timerRef.current)
     const keys = FILTERS.map(f => f.key)
@@ -181,7 +203,7 @@ export default function Projects() {
               Development · 2025–2026
             </div>
             <h2 className="font-serif text-4xl font-normal md:text-5xl">
-              <span className="font-serif text-3xl md:text-4xl" style={{ color: 'var(--accent)' }}>32+</span>{' '}Projects
+              <span className="font-serif text-3xl md:text-4xl" style={{ color: 'var(--accent)' }}>35+</span>{' '}Projects
             </h2>
           </div>
         </div>

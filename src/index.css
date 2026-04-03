@@ -16,6 +16,7 @@
   --dot-challenge: #e87a7a;
   --badge-webflow-color: rgb(20, 110, 245);
   --badge-government-color: #c084fc;
+  --ongoing-color: #fbbf24;
   --text: #e8eaf0;
   --muted: #94a3b8;
   --serif: 'DM Serif Display', Georgia, serif;
@@ -38,6 +39,7 @@ body.light-theme {
   --dot-challenge: #e68a8a;
   --badge-webflow-color: #6c9bcf;
   --badge-government-color: #b19cd9;
+  --ongoing-color: #d97706;
 }
 
 html { scroll-behavior: smooth; }
@@ -160,6 +162,7 @@ body.light-theme nav { background: rgba(255,255,255,0.7); }
 .wf-card[data-category="wordpress"]:hover { border-color: var(--dot-challenge); }
 .wf-card[data-category="react"]:hover { border-color: var(--accent3); }
 .wf-card[data-category="government"]:hover { border-color: var(--badge-government-color); }
+.wf-card[data-category="ongoing"]:hover { border-color: var(--ongoing-color); }
 
 /* ---- FILTER BUTTONS ---- */
 .filter-btn {
@@ -178,6 +181,7 @@ body.light-theme nav { background: rgba(255,255,255,0.7); }
 .filter-btn.active-react { background: var(--accent3); color: var(--bg); }
 .filter-btn.active-wordpress { background: var(--dot-challenge); color: var(--bg); border-color: rgba(255,255,255,0.3); }
 .filter-btn.active-government { background: var(--badge-government-color); color: #fff; border-color: rgba(255,255,255,0.3); }
+.filter-btn.active-ongoing { background: var(--ongoing-color); color: var(--bg); border-color: rgba(251,191,36,0.3); }
 .filter-btn.active-all { background: var(--badge-webflow-color); color: #fff; border-color: rgba(255,255,255,0.3); }
 
 /* ---- SKILL CARDS ---- */
@@ -233,6 +237,7 @@ body.light-theme nav { background: rgba(255,255,255,0.7); }
 .badge-wordpress { background: rgba(232,122,122,0.1); color: var(--dot-challenge); border-color: rgba(232,122,122,0.25); }
 .badge-react { background: rgba(125,226,196,0.1); color: var(--accent3); border-color: rgba(125,226,196,0.25); }
 .badge-government { background: rgba(192,132,252,0.26); color: var(--badge-government-color); border-color: rgba(192,132,252,0.25); }
+.badge-ongoing { background: rgba(251,191,36,0.1); color: var(--ongoing-color); border-color: rgba(251,191,36,0.25); }
 
 /* ---- CERT CARDS ---- */
 .cert-card {

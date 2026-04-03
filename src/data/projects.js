@@ -1,78 +1,14 @@
 export const webflowProjects = [
   {
     num: '01',
-    title: 'TecBrix',
-    url: 'https://www.tecbrix.com',
-    domain: 'tecbrix.com',
-    desc: 'Corporate cloud & technology consulting website. Multi-section marketing site covering 20+ service pages, AWS/Azure/Huawei cloud practice areas, and team augmentation flows.',
-    tags: ['Corporate', 'Multi-Service', 'Lead Gen']
+    title: 'Juke Audio',
+    url: 'https://www.jukeaudio.com',
+    domain: 'jukeaudio.com',
+    desc: 'Whole home multi-room audio system brand site. Product marketing for wireless streaming amplifiers (Juke 6, Juke 8, Juke+), mobile app showcase, e-commerce shop, speaker products, and installation guides',
+    tags: ['Smart Home', 'E-Commerce', 'Product Marketing', 'Audio']
   },
   {
     num: '02',
-    title: 'Al Ghurair Exchange',
-    url: 'https://www.alghurairexchange.com',
-    domain: 'alghurairexchange.com',
-    desc: 'Full forex & financial services platform for one of UAE\'s most trusted exchange houses. Live currency ticker, real-time forex converter, branch locator, and bilingual EN/AR RTL support.',
-    tags: ['Fintech', 'Bilingual RTL', 'Live Rates']
-  },
-  {
-    num: '03',
-    title: 'Step-Up Immigration',
-    url: 'https://stepupimmigration.com/',
-    domain: 'stepupimmigration.com',
-    desc: 'Immigration consultancy website designed to guide prospective applicants through complex visa and residency pathways with clear UX flows and strong calls-to-action.',
-    tags: ['Consultancy', 'Lead Gen', 'UX Flows']
-  },
-  {
-    num: '04',
-    title: 'GoPortal',
-    url: 'https://goportal.webflow.io',
-    domain: 'goportal.webflow.io',
-    desc: 'Portal product marketing website built on Webflow. Clean, conversion-focused layout showcasing the GoPortal platform\'s features, integrations, and onboarding flows.',
-    tags: ['SaaS Product', 'Portal', 'Marketing']
-  },
-  {
-    num: '05',
-    title: 'GoPortal · Nursing',
-    url: 'https://nursing.goportal.com',
-    domain: 'nursing.goportal.com',
-    desc: 'Programme recruitment microsite for MacEwan University\'s Post-Diploma Nursing Certificate. Features programme overview, admission requirements, and application form.',
-    tags: ['Higher Ed', 'Canada', 'Healthcare']
-  },
-  {
-    num: '06',
-    title: 'Quote-That',
-    url: 'https://quote-that.webflow.io',
-    domain: 'quote-that.webflow.io',
-    desc: 'Insurance or quoting platform marketing site. Interactive, feature-forward design highlighting the quoting workflow and value proposition for end users and businesses.',
-    tags: ['Quoting Tool', 'Interactive', 'SaaS']
-  },
-  {
-    num: '07',
-    title: 'Protect-Connect',
-    url: 'https://www.protect-connect.com',
-    domain: 'protect-connect.com',
-    desc: 'Insurance technology platform website with a focus on trust, clarity, and conversion. Clean product marketing site positioning Protect-Connect as a modern insurance connector.',
-    tags: ['InsurTech', 'Product Marketing', 'Live']
-  },
-  {
-    num: '08',
-    title: 'MVK Education',
-    url: 'https://mvk.edu.in',
-    domain: 'mvk.edu.in',
-    desc: 'Education institution website built for an Indian academic brand. Course listings, admissions flows, faculty showcases, and structured content hierarchy for student discovery.',
-    tags: ['Education', 'India', 'Admissions']
-  },
-  {
-    num: '09',
-    title: 'Sparx · Odoscope',
-    url: 'https://sparx.odoscope.com',
-    domain: 'sparx.odoscope.com',
-    desc: 'Subdomain product site for Sparx, part of the Odoscope ecosystem. Data-driven product marketing design with a technical, analytics-forward aesthetic.',
-    tags: ['Analytics', 'Data Product', 'SaaS']
-  },
-  {
-    num: '10',
     title: 'Odoscope',
     url: 'https://www.odoscope.com',
     domain: 'odoscope.com',
@@ -80,7 +16,81 @@ export const webflowProjects = [
     tags: ['AI / Personalisation', 'Commerce', 'Live']
   },
   {
+    num: '03',
+    title: 'MVK Education',
+    url: 'https://mvk.edu.in',
+    domain: 'mvk.edu.in',
+    desc: 'Education institution website built for an Indian academic brand. Course listings, admissions flows, faculty showcases, and structured content hierarchy for student discovery.',
+    tags: ['Education', 'India', 'Admissions']
+  },
+  {
+    num: '04',
+    title: 'TecBrix',
+    url: 'https://www.tecbrix.com',
+    domain: 'tecbrix.com',
+    desc: 'Corporate cloud & technology consulting website. Multi-section marketing site covering 20+ service pages, AWS/Azure/Huawei cloud practice areas, and team augmentation flows.',
+    tags: ['Corporate', 'Multi-Service', 'Lead Gen']
+  },
+  {
+    num: '05',
+    title: 'Al Ghurair Exchange',
+    url: 'https://www.alghurairexchange.com',
+    domain: 'alghurairexchange.com',
+    desc: 'Full forex & financial services platform for one of UAE\'s most trusted exchange houses. Live currency ticker, real-time forex converter, branch locator, and bilingual EN/AR RTL support.',
+    tags: ['Fintech', 'Bilingual RTL', 'Live Rates']
+  },
+  {
+    num: '06',
+    title: 'Step-Up Immigration',
+    url: 'https://stepupimmigration.com/',
+    domain: 'stepupimmigration.com',
+    desc: 'Immigration consultancy website designed to guide prospective applicants through complex visa and residency pathways with clear UX flows and strong calls-to-action.',
+    tags: ['Consultancy', 'Lead Gen', 'UX Flows']
+  },
+  {
+    num: '07',
+    title: 'GoPortal',
+    url: 'https://goportal.webflow.io',
+    domain: 'goportal.webflow.io',
+    desc: 'Portal product marketing website built on Webflow. Clean, conversion-focused layout showcasing the GoPortal platform\'s features, integrations, and onboarding flows.',
+    tags: ['SaaS Product', 'Portal', 'Marketing']
+  },
+  {
+    num: '08',
+    title: 'GoPortal · Nursing',
+    url: 'https://nursing.goportal.com',
+    domain: 'nursing.goportal.com',
+    desc: 'Programme recruitment microsite for MacEwan University\'s Post-Diploma Nursing Certificate. Features programme overview, admission requirements, and application form.',
+    tags: ['Higher Ed', 'Canada', 'Healthcare']
+  },
+  {
+    num: '09',
+    title: 'Quote-That',
+    url: 'https://quote-that.webflow.io',
+    domain: 'quote-that.webflow.io',
+    desc: 'Insurance or quoting platform marketing site. Interactive, feature-forward design highlighting the quoting workflow and value proposition for end users and businesses.',
+    tags: ['Quoting Tool', 'Interactive', 'SaaS']
+  },
+  {
+    num: '10',
+    title: 'Protect-Connect',
+    url: 'https://www.protect-connect.com',
+    domain: 'protect-connect.com',
+    desc: 'Insurance technology platform website with a focus on trust, clarity, and conversion. Clean product marketing site positioning Protect-Connect as a modern insurance connector.',
+    tags: ['InsurTech', 'Product Marketing', 'Live']
+  },
+ 
+  {
     num: '11',
+    title: 'Sparx · Odoscope',
+    url: 'https://sparx.odoscope.com',
+    domain: 'sparx.odoscope.com',
+    desc: 'Subdomain product site for Sparx, part of the Odoscope ecosystem. Data-driven product marketing design with a technical, analytics-forward aesthetic.',
+    tags: ['Analytics', 'Data Product', 'SaaS']
+  },
+  
+  {
+    num: '12',
     title: 'FitSpot',
     url: 'https://fitspot-wip.webflow.io',
     domain: 'fitspot-wip.webflow.io',
@@ -88,7 +98,7 @@ export const webflowProjects = [
     tags: ['Health & Fitness', 'Memberships', 'Mobile-First']
   },
   {
-    num: '12',
+    num: '13',
     title: 'Student Athletes',
     url: 'https://studentathletes.webflow.io',
     domain: 'studentathletes.webflow.io',
@@ -96,7 +106,7 @@ export const webflowProjects = [
     tags: ['NIL Platform', 'Sports', 'Career Tools']
   },
   {
-    num: '13',
+    num: '14',
     title: 'Moksha',
     url: 'https://wip-site-moksha.webflow.io',
     domain: 'wip-site-moksha.webflow.io',
@@ -104,7 +114,7 @@ export const webflowProjects = [
     tags: ['Wellness', 'Lifestyle', 'Brand']
   },
   {
-    num: '14',
+    num: '15',
     title: 'Nel Pretech',
     url: 'https://www.nelpretech.com',
     domain: 'nelpretech.com',
@@ -112,7 +122,7 @@ export const webflowProjects = [
     tags: ['Industrial', 'Manufacturing', '3D Scanning']
   },
   {
-    num: '15',
+    num: '16',
     title: 'Dualo',
     url: 'https://www.dualo.io',
     domain: 'dualo.io',
@@ -120,7 +130,7 @@ export const webflowProjects = [
     tags: ['SaaS / AI', 'Research Tool', 'Enterprise']
   },
   {
-    num: '16',
+    num: '17',
     title: 'SimpleDeploy',
     url: 'https://simpledeploy.webflow.io',
     domain: 'simpledeploy.webflow.io',
@@ -128,7 +138,7 @@ export const webflowProjects = [
     tags: ['Development', 'MVP', 'Agile']
   },
   {
-    num: '17',
+    num: '18',
     title: 'Sleep Habits',
     url: 'https://sleephabits.com',
     domain: 'sleephabits.com',
@@ -136,7 +146,7 @@ export const webflowProjects = [
     tags: ['E-Commerce', 'Health & Wellness', 'D2C Brand']
   },
   {
-    num: '18',
+    num: '19',
     title: 'Fidelco',
     url: 'https://fidelco.webflow.io',
     domain: 'fidelco.webflow.io',
@@ -144,13 +154,29 @@ export const webflowProjects = [
     tags: ['Smart Home', 'Commercial AV', 'Home Theater']
   },
   {
-    num: '19',
-    title: 'Juke Audio',
-    url: 'https://www.jukeaudio.com',
-    domain: 'jukeaudio.com',
-    desc: 'Whole home multi-room audio system brand site. Product marketing for wireless streaming amplifiers (Juke 6, Juke 8, Juke+), mobile app showcase, e-commerce shop, speaker products, and installation guides',
-    tags: ['Smart Home', 'E-Commerce', 'Product Marketing', 'Audio']
-  }
+    num: '20',
+    title: 'Oisigma',
+    url: 'https://oisigma.com',
+    domain: 'oisigma.com',
+    desc: 'Data-driven support & resistance platform for TradingView. Features the Behavioral Transform Model (BTM) — an adaptive indicator that frames price action relative to recent market behavior without hand-drawn levels or predictive signals.',
+    tags: ['FinTech', 'TradingView', 'SaaS', 'Analytics']
+  },
+  {
+    num: '21',
+    title: 'RAFL Arcade',
+    url: 'https://raflarcade.webflow.io',
+    domain: 'raflarcade.webflow.io',
+    desc: 'Non-profit hyper-casual gaming app by The RAFL Foundation. Three mini-games (Split, Spot, TiME) with real prize wagers, RAFL Tickets economy, split-screen multiplayer, and App Store distribution.',
+    tags: ['Gaming', 'Non-Profit', 'iOS App', 'Mobile']
+  },
+  {
+    num: '22',
+    title: 'FullScope Solutions',
+    url: 'https://www.fullscopeinc.com',
+    domain: 'fullscopeinc.com',
+    desc: 'CPG & beverage industry consulting firm. Features an 8-step business development process, tiered pricing, team profiles, success stories, retailer logo walls, and investor opportunity sections.',
+    tags: ['CPG / Beverage', 'Consulting', 'Business Dev', 'Brand Strategy']
+  },
 ]
 
 export const wordpressProjects = [
@@ -172,6 +198,14 @@ export const wordpressProjects = [
   },
   {
     num: 'WP·03',
+    title: 'Dtec',
+    url: 'https://dtec.ae',
+    domain: 'dtec.ae',
+    desc: 'The largest technology entrepreneur campus in MENA, located in Dubai Digital Park. WordPress site covering coworking plans, corporate innovation labs, startup events, venture capital.',
+    tags: ['Tech Hub', 'Dubai / MENA', 'Coworking', 'Startup']
+  },
+  {
+    num: 'WP·04',
     title: 'ManyGiggles',
     url: 'https://lightslategray-bat-143962.hostingersite.com',
     domain: 'manygiggles.ca',
@@ -179,7 +213,7 @@ export const wordpressProjects = [
     tags: ['SaaS / AI', 'Childcare', 'Canada', 'PIPEDA']
   },
   {
-    num: 'WP·04',
+    num: 'WP·05',
     title: 'Your Office Partners',
     url: 'https://yourofficepartners.com',
     domain: 'yourofficepartners.com',
@@ -187,21 +221,14 @@ export const wordpressProjects = [
     tags: ['Business Setup', 'UAE / Dubai', 'Legal / Finance']
   },
   {
-    num: 'WP·05',
+    num: 'WP·06',
     title: 'RealEyez360',
     url: 'https://realeyez360.com',
     domain: 'realeyez360.com',
     desc: 'Dubai-based real estate photography, videography, and Matterport 3D virtual tour platform. Custom WordPress site with video hero, booking flow, service pages, and galleries.',
     tags: ['Real Estate', 'Photography', 'Dubai / UAE', 'Matterport']
   },
-  {
-    num: 'WP·06',
-    title: 'Dtec',
-    url: 'https://dtec.ae',
-    domain: 'dtec.ae',
-    desc: 'The largest technology entrepreneur campus in MENA, located in Dubai Digital Park. WordPress site covering coworking plans, corporate innovation labs, startup events, venture capital.',
-    tags: ['Tech Hub', 'Dubai / MENA', 'Coworking', 'Startup']
-  }
+  
 ]
 
 export const reactProjects = [
@@ -231,30 +258,29 @@ export const reactProjects = [
     tags: ['Enterprise App', 'React', 'Tailwind'],
     badge: 'React'
   },
-  {
-    num: 'RX·04',
-    title: 'PageSpeed',
-    url: 'https://pagespeed.vercel.app',
-    domain: 'pagespeed.vercel.app',
-    desc: 'PageSpeed is a tool that helps you improve the speed of your website for all pages in one click.',
-    tags: ['Performance', 'Next.js', 'Tool'],
-    badge: 'Next.js'
-  },
+  { num: 'RX·06',
+    badge: 'React · TypeScript',
+    title: 'Dishpilots',
+    url: 'https://staging.dishpilots.com',
+    domain: 'staging.dishpilots.com', 
+    desc: 'Online food ordering platform featuring real customer reviews, menu browsing, and branch selection. Built with a focus on user experience and fresh, high-quality presentation.', 
+    tags: ['Food Delivery', 'React', 'TypeScript', 'Customer Reviews', 'E‑commerce'] },
   {
     num: 'RX·05',
     title: 'Edarat DMS (Frontend Demo)',
-    
-    domain: 'Edarat DMS Internal',
+    url: 'https://dms-edarat.vercel.app/',
+    domain: 'Dms Edarat Internal',
     desc: 'Enterprise document management system demo with role‑based permissions (approver, editor, viewer). Built with React, TypeScript, Tailwind, and Vite.',
     tags: ['DMS', 'Role‑Based Access', 'TypeScript', 'Vite'],
     badge: 'React · TypeScript'
-  },  
-  { num: 'RX-06',
+  },
+  {
+    num: 'RX-06',
     title: 'Fujairah Municipality Data Visualization',
     url: 'https://fujairah-municipality.vercel.app',
     domain: 'fujairah-municipality.vercel.app',
     desc: 'Interactive data visualization dashboard for Fujairah Municipality, UAE. Real-time charts, maps, and sector metrics for urban planning and government performance monitoring.',
-    tags: ['Government', 'Data Visualization', 'React', 'TypeScript', 'Mapbox', 'Dashboard', 'Bilingual RTL' ],
+    tags: ['Government', 'Data Visualization', 'React', 'TypeScript', 'Mapbox', 'Dashboard', 'Bilingual RTL'],
     badge: 'React · TypeScript',
   },
 ]
@@ -277,12 +303,43 @@ export const governmentProjects = [
     tags: ['Government', 'Android / Kiosk', 'UAE Dubai', 'UX Design'],
     badge: 'Android / UI'
   },
-  { num: 'GOV·03',
+  {
+    num: 'GOV·03',
     title: 'Fujairah Municipality Data Visualization',
     url: 'https://fujairah-municipality.vercel.app',
     domain: 'fujairah-municipality.vercel.app',
     desc: 'Interactive data visualization dashboard for Fujairah Municipality, UAE. Real-time charts, maps, and sector metrics for urban planning and government performance monitoring.',
-    tags: ['Government', 'Data Visualization', 'React', 'TypeScript', 'Mapbox', 'Dashboard', 'Bilingual RTL' ],
+    tags: ['Government', 'Data Visualization', 'React', 'TypeScript', 'Mapbox', 'Dashboard', 'Bilingual RTL'],
     badge: 'React · TypeScript',
+  },
+]
+
+export const ongoingProjects = [
+  {
+    num: 'OG·01',
+    title: 'FullScope Solutions (Staging)',
+    url: 'https://fullscope.webflow.io',
+    domain: 'fullscope.webflow.io',
+    desc: 'Active development build for FullScope Solutions Inc. — a CPG & beverage consulting firm. Ongoing Webflow build with iterative design updates, new sections, and content refinements.',
+    tags: ['CPG / Beverage', 'Webflow', 'Consulting', 'In Progress'],
+    badge: 'Webflow'
+  },
+  {
+    num: 'OG·02',
+    title: 'PGP Health',
+    url: 'https://pgp-health.webflow.io',
+    domain: 'pgp-health.webflow.io',
+    desc: 'Healthcare platform website under active development on Webflow. Building out patient-facing UX flows, service pages, and provider information architecture.',
+    tags: ['Healthcare', 'Webflow', 'In Progress'],
+    badge: 'Webflow'
+  },
+  {
+    num: 'OG·03',
+    title: 'VirtuHire',
+    url: 'https://virtuhire-frontend.vercel.app',
+    domain: 'virtuhire-frontend.vercel.app',
+    desc: 'GCC offshore staffing & recruitment platform. Full-stack build with React/Next.js frontend on Vercel and Django/PostgreSQL backend on Railway. Stripe payments, JWT auth, and email notifications.',
+    tags: ['Staffing', 'React / Next.js', 'Django', 'Stripe', 'Full-Stack'],
+    badge: 'Next.js · Django'
   },
 ]
