@@ -5,6 +5,7 @@ import { TrustedBy, Stats, About } from './components/Sections'
 import CaseStudies from './components/CaseStudies'
 import Projects from './components/Projects'
 import { Services, Contact, Footer } from './components/ContactFooter'
+import Testimonials from './components/Testimonails'
 
 export default function PortfolioSite() {
   const [theme, setTheme] = useState(() => {
@@ -57,6 +58,7 @@ export default function PortfolioSite() {
         <TrustedBy />
         <Stats />
         <About />
+        <Testimonials />   {/* Add this line */}
         <CaseStudies />
         <Projects />
         <Services />

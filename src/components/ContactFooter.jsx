@@ -1,3 +1,5 @@
+import { useState } from 'react'
+
 export function Services() {
   const services = [
     {
@@ -50,6 +52,34 @@ export function Services() {
 }
 
 export function Contact() {
+  const [formStatus, setFormStatus] = useState(null)
+  const [formData, setFormData] = useState({ name: '', email: '', message: '' })
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value })
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault()
+    setFormStatus('loading')
+    try {
+      // ⚠️ REPLACE THIS with your actual Formspree ID
+      const response = await fetch('https://formspree.io/f/mqegywog', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify(formData)
+      })
+      if (response.ok) {
+        setFormStatus('success')
+        setFormData({ name: '', email: '', message: '' })
+      } else {
+        setFormStatus('error')
+      }
+    } catch (error) {
+      setFormStatus('error')
+    }
+  }
+
   return (
     <section id="contact" className="relative z-10 px-5 py-20 text-center md:px-12 md:py-32">
       <div className="mx-auto max-w-4xl">
@@ -60,6 +90,64 @@ export function Contact() {
         <p className="mb-8 text-base md:text-lg md:mb-10" style={{ color: 'var(--muted)' }}>
           16 years of experience. Available globally. Response within 24 hours.
         </p>
+
+        {/* Contact Form */}
+        <div className="max-w-md mx-auto mb-12 text-left">
+          <form onSubmit={handleSubmit} className="space-y-4">
+            <div>
+              <label className="block text-sm font-mono mb-1" style={{ color: 'var(--muted)' }}>Name</label>
+              <input
+                type="text"
+                name="name"
+                value={formData.name}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 rounded-lg border focus:outline-none"
+                style={{ background: 'var(--surface)', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text)' }}
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-mono mb-1" style={{ color: 'var(--muted)' }}>Email</label>
+              <input
+                type="email"
+                name="email"
+                value={formData.email}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 rounded-lg border focus:outline-none"
+                style={{ background: 'var(--surface)', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text)' }}
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-mono mb-1" style={{ color: 'var(--muted)' }}>Message / Project details</label>
+              <textarea
+                name="message"
+                rows="4"
+                value={formData.message}
+                onChange={handleChange}
+                required
+                className="w-full px-4 py-2 rounded-lg border focus:outline-none"
+                style={{ background: 'var(--surface)', borderColor: 'rgba(255,255,255,0.1)', color: 'var(--text)' }}
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              disabled={formStatus === 'loading'}
+              className="w-full px-5 py-3 font-semibold rounded-xl transition-all duration-300 hover:-translate-y-1"
+              style={{ background: 'var(--accent)', color: 'var(--bg)' }}
+            >
+              {formStatus === 'loading' ? 'Sending...' : 'Send Message →'}
+            </button>
+            {formStatus === 'success' && (
+              <p className="text-sm text-center mt-3" style={{ color: '#7de2c4' }}>✓ Message sent! I'll reply within 24h.</p>
+            )}
+            {formStatus === 'error' && (
+              <p className="text-sm text-center mt-3" style={{ color: '#e87a7a' }}>❌ Error. Please email me directly at shersials@gmail.com</p>
+            )}
+          </form>
+        </div>
+
+        {/* Action Buttons */}
         <div className="flex flex-wrap gap-3 justify-center mb-12 md:gap-4 md:mb-16">
           <a href="mailto:shersials@gmail.com"
             className="px-5 py-3 font-semibold no-underline rounded-xl transition-all duration-300 hover:-translate-y-1 hover:opacity-90 md:px-8 md:py-4"
@@ -78,6 +166,7 @@ export function Contact() {
           </a>
         </div>
 
+        {/* Contact Details */}
         <div className="mx-auto max-w-sm text-left">
           <h3 className="mb-4 font-serif text-xl font-normal md:text-2xl md:mb-5">Get in touch</h3>
           <div className="space-y-3">

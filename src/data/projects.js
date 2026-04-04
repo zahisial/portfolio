@@ -335,11 +335,20 @@ export const ongoingProjects = [
   },
   {
     num: 'OG·03',
-    title: 'VirtuHire',
-    url: 'https://virtuhire-frontend.vercel.app',
-    domain: 'virtuhire-frontend.vercel.app',
+    title: 'VityrHire',
+    url: 'https://virtuhire-demo.vercel.app',
+    domain: 'virtuhire-demo.vercel.app',
     desc: 'GCC offshore staffing & recruitment platform. Full-stack build with React/Next.js frontend on Vercel and Django/PostgreSQL backend on Railway. Stripe payments, JWT auth, and email notifications.',
     tags: ['Staffing', 'React / Next.js', 'Django', 'Stripe', 'Full-Stack'],
     badge: 'Next.js · Django'
   },
-]
+  {
+    num: 'OG·04',
+    title: 'Cross Gate Legal',
+    url: 'https://crossgatelegal.com',           // ✅ your correct URL
+    domain: 'crossgatelegal.com',                // fixed domain
+    desc: 'Corporate legal & compliance services website. Currently under development – modern layout for legal expertise, practice areas, and client onboarding.',
+    tags: ['Legal', 'Corporate', 'Compliance', 'In Progress'],
+    badge: 'React · Tailwind · WordPress'
+  }
+];

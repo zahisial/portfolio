@@ -17,7 +17,10 @@ export default function Hero() {
         Based in Lahore · Available worldwide · Specialist in digital transformation,
         cloud-product UI, and end-to-end web development for enterprise clients.
       </p>
-
+      <div className="flex gap-4 mt-6 mb-6">
+        <a href="#contact" className="px-6 py-3 font-semibold rounded-full bg-accent text-bg">Start a Project →</a>
+        <a href="#work" className="px-6 py-3 font-semibold rounded-full border border-muted text-muted hover:text-accent">View Work</a>
+      </div>
       <div className="flex flex-wrap gap-2 mb-8 md:gap-3 md:mb-12">
         {tags.map(tag => (
           <span key={tag} className="pill">{tag}</span>
