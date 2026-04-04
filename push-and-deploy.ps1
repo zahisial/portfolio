@@ -1,4 +1,4 @@
-# ============================================
+﻿# ============================================
 # 1. Push source code to main branch
 # ============================================
 Write-Host "📤 Pushing source code to main..." -ForegroundColor Cyan
