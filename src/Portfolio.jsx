@@ -5,7 +5,7 @@ import { TrustedBy, Stats, About } from './components/Sections'
 import CaseStudies from './components/CaseStudies'
 import Projects from './components/Projects'
 import { Services, Contact, Footer } from './components/ContactFooter'
-import Testimonials from './components/Testimonails'
+import Testimonials from './components/Testimonials'
 
 export default function PortfolioSite() {
   const [theme, setTheme] = useState(() => {
