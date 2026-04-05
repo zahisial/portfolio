@@ -6,7 +6,7 @@ const FILTERS = [
   { key: 'react', label: 'React' },
   { key: 'wordpress', label: 'WordPress' },
   { key: 'government', label: 'Government' },
-  { key: 'ongoing', label: 'Ongoing' },
+  // { key: 'ongoing', label: 'Ongoing' },
 ]
 
 const ACTIVE_STYLES = {

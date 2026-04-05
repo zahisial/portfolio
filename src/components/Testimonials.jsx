@@ -1,4 +1,5 @@
 export default function Testimonials() {
+  console.log("🔵 TESTIMONIALS COMPONENT IS RENDERING");
     const testimonials = [
       {
         text: "Zahid is a hard-worker and a team player. I trusted him to get the job done on projects with strict deadlines, and he delivered every time. He has shown remarkable growth adding new skills and embracing new technologies.",
