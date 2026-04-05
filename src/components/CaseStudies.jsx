@@ -78,7 +78,7 @@ export default function CaseStudies() {
           </div>
           <h2 className="font-serif text-3xl font-normal md:text-5xl">Case Studies</h2>
         </div>
-        <div className="font-serif text-3xl md:text-4xl" style={{ color: 'rgba(232,200,122,0.3)' }}>03</div>
+        <div className="font-serif text-3xl md:text-4xl" style={{ color: 'rgba(232,200,122,0.3)' }}>04</div>
       </div>
 
       <div className="relative">
