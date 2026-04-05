@@ -1,6 +1,7 @@
 cd D:\projects\portfolio\portfolio
 git add .
 git commit -m "Source update before build $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
+git push -u origin main
 npm run build
 
 # Empty prod\build but keep .git folder (if exists)
