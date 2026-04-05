@@ -1,0 +1,5 @@
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/uiplegcj/public_html/
+    - /bin/rm -Rf $DEPLOYPATH/*
+    - /bin/cp -R . $DEPLOYPATH
