@@ -36,18 +36,18 @@ export const caseStudies = [
     linkLabel: '→ jukeaudio.com',
   },
   
-  {
-    num: '04',
-    company: 'Edarat DMS',
-    desc: 'Full-scale enterprise document management system — centralised storage, approval workflows, and audit-ready compliance for GCC operations.',
-    tags: ['Enterprise DMS', 'React · Tailwind', 'Live Platform'],
-    challenge: ['Edarat Group managed thousands of internal documents across departments via email threads and shared drives with zero audit trails', 'No centralised approval workflow — documents passed through manual chains causing version conflicts and lost files', 'Bilingual teams needed full Arabic RTL support with role-based access control across approver, editor, and viewer levels'],
-    solution: ['Designed and built a complete React + Vite + Tailwind CSS document management interface with hierarchical folder structure and metadata tagging', 'Implemented multi-step approval workflows with role-based permissions, document versioning, and full-text search across all repositories', 'Delivered bilingual EN/AR RTL layout with responsive design optimised for both desktop power users and tablet-based field teams'],
-    outcome: ['70% reduction in document retrieval time — from minutes to seconds via structured search and metadata filtering', '100% audit compliance with full version history, approval chains, and timestamped activity logs', 'Platform approved for full-stack production integration with Prisma/Node.js backend'],
-    metrics: [['70%', 'Faster Retrieval'], ['100%', 'Audit Compliance'], ['EN/AR', 'Bilingual RTL']],
-    link: 'https://dms-edarat.vercel.app',
-    linkLabel: '→ dms-edarat.vercel.app',
-  }
+  // {
+  //   num: '04',
+  //   company: 'Edarat DMS',
+  //   desc: 'Full-scale enterprise document management system — centralised storage, approval workflows, and audit-ready compliance for GCC operations.',
+  //   tags: ['Enterprise DMS', 'React · Tailwind', 'Live Platform'],
+  //   challenge: ['Edarat Group managed thousands of internal documents across departments via email threads and shared drives with zero audit trails', 'No centralised approval workflow — documents passed through manual chains causing version conflicts and lost files', 'Bilingual teams needed full Arabic RTL support with role-based access control across approver, editor, and viewer levels'],
+  //   solution: ['Designed and built a complete React + Vite + Tailwind CSS document management interface with hierarchical folder structure and metadata tagging', 'Implemented multi-step approval workflows with role-based permissions, document versioning, and full-text search across all repositories', 'Delivered bilingual EN/AR RTL layout with responsive design optimised for both desktop power users and tablet-based field teams'],
+  //   outcome: ['70% reduction in document retrieval time — from minutes to seconds via structured search and metadata filtering', '100% audit compliance with full version history, approval chains, and timestamped activity logs', 'Platform approved for full-stack production integration with Prisma/Node.js backend'],
+  //   metrics: [['70%', 'Faster Retrieval'], ['100%', 'Audit Compliance'], ['EN/AR', 'Bilingual RTL']],
+  //   link: 'https://dms-edarat.vercel.app',
+  //   linkLabel: '→ dms-edarat.vercel.app',
+  // }
    
   
 ]
