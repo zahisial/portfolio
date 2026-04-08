@@ -17,3 +17,5 @@ git remote add origin https://github.com/zahisial/shersial-app.git 2>$null
 git add .
 git commit -m "Deploy build $(Get-Date -Format 'yyyy-MM-dd HH:mm:ss')"
 git push -u origin HEAD:build --force
+# 
+Compress-Archive -Path "D:\projects\portfolio\prod\build\*" -DestinationPath "D:\projects\portfolio\prod\build.zip" -Force
