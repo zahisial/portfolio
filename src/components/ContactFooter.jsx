@@ -200,17 +200,36 @@ export function Contact() {
 
 export function Footer() {
   return (
-    <footer className="flex flex-col gap-3 justify-between items-center px-5 py-6 font-mono text-xs md:flex-row md:px-12 md:py-8 md:text-sm"
+    <footer className="flex flex-col gap-4 justify-between items-center px-5 py-6 font-mono text-xs md:px-12 md:py-8 md:text-sm"
       style={{ color: 'var(--muted)', borderTop: '1px solid rgba(255,255,255,0.1)' }}>
-      <span className="flex gap-2 items-center">
-        <img src="/logo.webp" alt="Sher" className="h-4 md:h-5" style={{ filter: ' invert(1)' }} />
-        <span>© 2025 · UI/UX Designer &amp; Developer</span>
-      </span>
-      <span>
-        Lahore, PK · Available Globally ·{' '}
-        <a href="mailto:shersials@gmail.com" className="no-underline transition-colors hover:text-accent"
-          style={{ color: 'var(--muted)' }}>shersials@gmail.com</a>
-      </span>
+      <div className="flex flex-wrap gap-4 justify-center items-center">
+        <a href="https://www.linkedin.com/in/zahidshersial/" target="_blank" rel="noopener noreferrer"
+          className="no-underline transition-colors hover:text-accent" style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on LinkedIn">LinkedIn</a>
+        <a href="https://x.com/SherSial" target="_blank" rel="noopener noreferrer"
+          className="no-underline transition-colors hover:text-accent" style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on X (Twitter)">X / Twitter</a>
+        <a href="https://www.facebook.com/MZahidSherSial" target="_blank" rel="noopener noreferrer"
+          className="no-underline transition-colors hover:text-accent" style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on Facebook">Facebook</a>
+        <a href="https://dribbble.com/shersial" target="_blank" rel="noopener noreferrer"
+          className="no-underline transition-colors hover:text-accent" style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on Dribbble">Dribbble</a>
+        <a href="https://www.behance.net/shersials" target="_blank" rel="noopener noreferrer"
+          className="no-underline transition-colors hover:text-accent" style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on Behance">Behance</a>
+      </div>
+      <div className="flex flex-col gap-2 items-center md:flex-row md:justify-between md:w-full">
+        <span className="flex gap-2 items-center">
+          <img src="/logo.webp" alt="Zahid Sher Sial — UI/UX Designer & Front-End Developer" className="h-4 md:h-5" style={{ filter: ' invert(1)' }} />
+          <span>© 2025 · UI/UX Designer &amp; Developer</span>
+        </span>
+        <span>
+          Lahore, PK · Available Globally ·{' '}
+          <a href="mailto:shersials@gmail.com" className="no-underline transition-colors hover:text-accent"
+            style={{ color: 'var(--muted)' }}>shersials@gmail.com</a>
+        </span>
+      </div>
     </footer>
   )
 }
