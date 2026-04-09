@@ -218,6 +218,12 @@ export function Footer() {
         <a href="https://www.behance.net/shersials" target="_blank" rel="noopener noreferrer"
           className="no-underline transition-colors hover:text-accent" style={{ color: 'var(--muted)' }}
           aria-label="Zahid Sher Sial on Behance">Behance</a>
+          <a href='https://contra.com/m_zahid_sher_sial/work ' target='_blank' rel='noopener noreferrer' className='no-underline transsition-colos hover:text-accent' style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on Contra" >Contra</a>
+          <a href='https://gist.github.com/shersial ' target='_blank' rel='noopener noreferrer' className='no-underline transsition-colos hover:text-accent' style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on Gist" >Gist</a>
+          <a href='https://www.pinterest.com/shersial/ ' target='_blank' rel='noopener noreferrer' className='no-underline transsition-colos hover:text-accent' style={{ color: 'var(--muted)' }}
+          aria-label="Zahid Sher Sial on Pintrest" >Pintrest</a>
       </div>
       <div className="flex flex-col gap-2 items-center md:flex-row md:justify-between md:w-full">
         <span className="flex gap-2 items-center">
