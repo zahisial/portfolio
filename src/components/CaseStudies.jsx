@@ -2,7 +2,7 @@ import { caseStudies } from '../data/caseStudies'
 
 function CaseStudyCard({ cs, zIndex }) {
   return (
-    <div className={`lg:sticky lg:top-24 mb-8 lg:mb-0`} style={{ zIndex }}>
+    <article className={`lg:sticky lg:top-24 mb-8 lg:mb-0`} style={{ zIndex }}>
       <div className="cs-card reveal">
         <div className="p-5 md:p-8 lg:p-14 grid grid-cols-1 lg:grid-cols-[1fr_auto] gap-4 md:gap-6 lg:gap-10">
           <div>
@@ -64,7 +64,7 @@ function CaseStudyCard({ cs, zIndex }) {
           )}
         </div>
       </div>
-    </div>
+    </article>
   )
 }
 
