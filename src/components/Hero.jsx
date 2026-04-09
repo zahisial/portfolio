@@ -12,12 +12,10 @@ export default function Hero() {
       <span style={{ position: 'absolute', width: 1, height: 1, padding: 0, margin: -1, overflow: 'hidden', clip: 'rect(0,0,0,0)', whiteSpace: 'nowrap', border: 0 }}>
   — Senior UI/UX Designer & Front-End Developer specializing in Webflow, React, WordPress & Next.js
 </span>
-
         I design <em className="not-italic" style={{ color: 'var(--accent)' }}>experiences</em><br />
         and build the code<br />behind them.
         
       </h1>
-
       <p className="text-base mb-8 md:text-lg md:mb-12 max-w-[540px]" style={{ color: 'var(--muted)' }}>
         Based in Lahore · Available worldwide · Specialist in digital transformation,
         cloud-product UI, and end-to-end web development for enterprise clients.
@@ -34,3 +32,5 @@ export default function Hero() {
     </div>
   )
 }
+// add new footer
+
