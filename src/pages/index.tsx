@@ -1,5 +1,18 @@
+import React from "react";
 import { useState, useCallback, useRef } from "react";
 
+
+interface Job {
+  title: string;
+  company: string;
+  location: string;
+  url: string;
+  source: string;
+  posted: string;
+  description: string;
+  skills: string[];
+  match_score: number;
+}
 const PROFILE = {
   name: "Zahid Sher Sial",
   title: "Senior UI/UX Designer & Front-End Developer",
@@ -39,7 +52,7 @@ const SEARCH_QUERIES = [
 ];
 
 export default function JobScanner() {
-  const [jobs, setJobs] = useState([]);
+
   const [scanning, setScanning] = useState(false);
   const [scanPhase, setScanPhase] = useState("");
   const [error, setError] = useState(null);
@@ -47,6 +60,7 @@ export default function JobScanner() {
   const [generatingMsg, setGeneratingMsg] = useState(null);
   const [expandedJob, setExpandedJob] = useState(null);
   const abortRef = useRef(null);
+  const [jobs, setJobs] = useState<Job[]>([]);
 
   const scanJobs = useCallback(async () => {
     setScanning(true);
